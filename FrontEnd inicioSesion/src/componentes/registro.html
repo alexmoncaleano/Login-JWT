@@ -1,0 +1,48 @@
+<div class="wrapper">
+    <div class="d-flex justify-content-center">
+        <a href="javascript: cambiarLogoInicio(1, 12)">
+            <img id="fotoAcceso" src="src/assets/images/eye1.png" alt="">
+        </a>
+    </div>
+
+    <div class="text-center mt-4 name">
+        Registrar usuario
+    </div>
+
+    <form id="frmInicioSesion" action="javascript:iniciarSesion(this);" class="p-3  validarFormulario" novalidate>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-user icon-color"></span>
+            <input class="form-control shadow-none" id="usu" placeholder="Usuario" required />
+        </div>
+
+        <div class="form-field d-flex align-items-center">
+            <span class="fa-solid fa-key icon-color"></span>
+            <input type="password" class="form-control shadow-none" id="cla" placeholder="Contraseña" required
+                minlength="4" />
+        </div>
+
+        <div class="form-field d-flex align-items-center">
+            <span class="fa-solid fa-key icon-color"></span>
+            <input type="password" class="form-control shadow-none" id="recla" placeholder="Confirmar contraseña"
+                required />
+        </div>
+
+        <button type="submit" class="btn mt-3" name="validarRegistro">
+            Registrar usuario
+        </button>
+    </form>
+
+    <div class="text-center">
+        <span style="font-size: 0.8rem;">¿Ya tiene cuenta?</span>
+        <a href="#">Inicie sesión aquí</a>
+    </div>
+
+    <div class="mt-3">
+        <div id="msgResultado" class="alert alert-danger alert-dismissible fade show" role="alert"
+            style="display: none;">
+            <i class="fa-solid fa-user-lock"></i>&nbsp;
+            <small>Mensaje si está mal....</small>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-Ejecutar con 2.7.4</actionName>
+            <displayName>Ejecutar con 2.7.4</displayName>
+            <goals>
+                <goal>org.springframework.boot:spring-boot-maven-plugin:2.7.4:run</goal>
+            </goals>
+        </action>
+    </actions>
